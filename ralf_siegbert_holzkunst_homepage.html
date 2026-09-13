@@ -77,22 +77,17 @@
         "name": "Ralf-Siegbert Giesen",
         "jobTitle": "Holzkünstler & Formgestalter",
         "description": "Einzigartige Holzskulpturen und organische Wandobjekte aus heimischen Edelhölzern",
-        "url": "https://www.ralfsiegbert-holzkunst.de",
-        "email": "kontakt@ralfsiegbert-holzkunst.de",
-        "address": [
-            {
-                "@type": "PostalAddress",
-                "addressLocality": "Gießen",
-                "addressRegion": "Hessen",
-                "addressCountry": "DE"
-            },
-            {
-                "@type": "PostalAddress",
-                "addressLocality": "Sontra",
-                "addressRegion": "Hessen",
-                "addressCountry": "DE"
-            }
-        ],
+        "url": "https://darkicodebump.github.io/RS_Homepage/",
+        "email": "50erJunge@googlemail.com",
+        "telephone": "+49 5658 922830",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Hintergasse 9",
+            "postalCode": "36205",
+            "addressLocality": "Sontra",
+            "addressRegion": "Hessen",
+            "addressCountry": "DE"
+        },
         "makesOffer": {
             "@type": "Offer",
             "itemOffered": {
@@ -1890,9 +1885,8 @@
                             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
                         </div>
                         <div class="info-text">
-                            <h4>Atelier Standorte</h4>
-                            <!-- 📝 TEXT: Standorte anpassen -->
-                            <p>Region Gießen &amp; Werra-Meißner / Sontra</p>
+                            <h4>Atelier &amp; Standort</h4>
+                            <p>Hintergasse 9<br>36205 Sontra</p>
                         </div>
                     </div>
 
@@ -1902,12 +1896,7 @@
                         </div>
                         <div class="info-text">
                             <h4>E-Mail</h4>
-                            <!--
-                            🔧 TODO: Echte E-Mail-Adresse eintragen
-                            Tipp: Verwende ein Kontaktformular-Backend statt die E-Mail offen zu zeigen,
-                            um Spam zu reduzieren.
-                            -->
-                            <p><a href="mailto:kontakt@ralfsiegbert-holzkunst.de" style="color: var(--text-muted); text-decoration: none; border-bottom: 1px solid var(--border-subtle);">kontakt@ralfsiegbert-holzkunst.de</a></p>
+                            <p><a href="mailto:50erJunge@googlemail.com" style="color: var(--text-muted); text-decoration: none; border-bottom: 1px solid var(--border-subtle);">50erJunge@googlemail.com</a></p>
                         </div>
                     </div>
 
@@ -1916,36 +1905,12 @@
                             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                         </div>
                         <div class="info-text">
-                            <h4>Besuchstermine</h4>
-                            <p>Atelierbesuche nach telefonischer Vereinbarung</p>
+                            <h4>Telefon &amp; Termine</h4>
+                            <p><a href="tel:05658922830" style="color: var(--text-muted); text-decoration: none;">05658 922830</a> (Atelierbesuche nach Vereinbarung)</p>
                         </div>
                     </div>
                 </div>
 
-                <!--
-                🔧 TODO: KONTAKTFORMULAR-BACKEND EINRICHTEN
-                
-                Aktuell zeigt das Formular nur eine Bestätigungsmeldung, sendet aber keine E-Mails.
-                Für echte Funktion hast du folgende Optionen:
-                
-                OPTION 1 – Formspree (einfachste Lösung, kostenlos bis 50 Nachrichten/Monat):
-                  1. Gehe zu https://formspree.io und erstelle ein kostenloses Konto
-                  2. Erstelle ein neues Formular und kopiere die Formular-ID
-                  3. Ändere die action-URL unten:
-                     action="https://formspree.io/f/DEINE_FORMULAR_ID"
-                  4. Entferne das onsubmit="..." Attribut
-                  5. Entferne method="POST" NICHT
-                
-                OPTION 2 – Netlify Forms (wenn du über Netlify hostest):
-                  1. Füge data-netlify="true" zum <form> Tag hinzu
-                  2. Netlify erkennt das Formular automatisch
-                
-                OPTION 3 – Einfacher mailto-Link (kein Backend nötig, aber weniger komfortabel):
-                  Ersetze das Formular durch einen Button:
-                  <a href="mailto:kontakt@ralfsiegbert-holzkunst.de?subject=Anfrage über Website" class="btn btn-primary">
-                    E-Mail schreiben
-                  </a>
-                -->
                 <div class="reveal reveal-delay-1">
                     <form id="contactForm" action="https://formspree.io/f/DEINE_FORMULAR_ID" method="POST" novalidate>
                         <div class="form-group">
@@ -1958,7 +1923,7 @@
                         </div>
                         <div class="form-group">
                             <label for="subject">Betreff / Anliegen</label>
-                            <input type="text" id="subject" name="subject" class="form-control" placeholder="z. B. Kaufanfrage 'Aethelgard' / Atelierbesuch">
+                            <input type="text" id="subject" name="subject" class="form-control" placeholder="z. B. Kaufanfrage / Atelierbesuch">
                         </div>
                         <div class="form-group">
                             <label for="message">Ihre Nachricht</label>
@@ -1974,7 +1939,7 @@
                             <polyline points="9 12 11.5 14.5 16 9.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                         <h3>Vielen Dank!</h3>
-                        <p>Ihre Nachricht wurde erfolgreich gesendet. Ralf Siegbert wird sich in Kürze bei Ihnen melden.</p>
+                        <p>Ihre Nachricht wurde erfolgreich gesendet. Ralf-Siegbert Giesen wird sich in Kürze bei Ihnen melden.</p>
                     </div>
                 </div>
             </div>
@@ -1982,12 +1947,7 @@
     </section>
 
     <!-- ================================================================
-         ⚖️ RECHT: IMPRESSUM (gesetzlich verpflichtend nach TMG §5)
-         
-         WICHTIG: Dieses Impressum MUSS vor Veröffentlichung der Website
-         mit den echten Daten von Ralf Siegbert gefüllt werden!
-         
-         Die Platzhalter [IN ECKIGEN KLAMMERN] müssen ersetzt werden.
+         ⚖️ RECHT: IMPRESSUM (gesetzlich verpflichtend nach DDG § 5)
          ================================================================ -->
     <section id="impressum" class="legal-section">
         <div class="container">
@@ -1995,44 +1955,30 @@
 
             <h2>Impressum</h2>
 
-            <h3>Angaben gemäß § 5 TMG</h3>
-            <!--
-            ⚖️ RECHT: Ersetze ALLE Platzhalter in eckigen Klammern [...]
-            mit den echten Daten. NICHTS davon darf fehlen!
-            -->
+            <h3>Angaben gemäß § 5 DDG</h3>
             <p>
-                <strong>[Vollständiger Vor- und Nachname]</strong><br>
-                <!-- Falls Gewerbe/Firma: Firmenname hier einfügen -->
-                [Straße und Hausnummer]<br>
-                [PLZ] [Ort]
+                <strong>Ralf-Siegbert Giesen</strong><br>
+                Holzgestaltung &amp; Kunst<br>
+                Hintergasse 9<br>
+                36205 Sontra
             </p>
 
             <h3>Kontakt</h3>
             <p>
-                Telefon: [Telefonnummer eintragen]<br>
-                E-Mail: [E-Mail-Adresse eintragen, z.B. kontakt@ralfsiegbert-holzkunst.de]
+                Telefon: 05658 922830<br>
+                E-Mail: <a href="mailto:50erJunge@googlemail.com" style="color: var(--accent-gold);">50erJunge@googlemail.com</a>
             </p>
 
-            <!--
-            ⚖️ RECHT: Falls eine Umsatzsteuer-ID vorhanden ist, diesen Block einblenden.
-            Falls KEINE vorhanden (Kleinunternehmer), den Block löschen.
-            -->
-            <h3>Umsatzsteuer-ID</h3>
+            <h3>Umsatzsteuer-Hinweis</h3>
             <p>
-                Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br>
-                [USt-IdNr. eintragen, z.B. DE123456789 – oder diesen Abschnitt löschen]
+                Gemäß § 19 UStG wird keine Umsatzsteuer berechnet und ausgewiesen (Kleinunternehmerregelung).
             </p>
 
-            <!--
-            ⚖️ RECHT: Falls freiberuflich oder als Gewerbe angemeldet,
-            ggf. zuständige Aufsichtsbehörde angeben.
-            -->
-
-            <h3>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h3>
+            <h3>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h3>
             <p>
-                [Vollständiger Vor- und Nachname]<br>
-                [Straße und Hausnummer]<br>
-                [PLZ] [Ort]
+                Ralf-Siegbert Giesen<br>
+                Hintergasse 9<br>
+                36205 Sontra
             </p>
 
             <h3>Haftungsausschluss</h3>
@@ -2046,15 +1992,6 @@
 
     <!-- ================================================================
          ⚖️ RECHT: DATENSCHUTZERKLÄRUNG (gesetzlich verpflichtend nach DSGVO)
-         
-         WICHTIG: Diese Datenschutzerklärung MUSS vor Veröffentlichung
-         mit den echten Daten gefüllt werden!
-         
-         EMPFEHLUNG: Nutze einen Datenschutz-Generator, z.B.:
-         - https://datenschutz-generator.de (Dr. Thomas Schwenke)
-         - https://www.e-recht24.de/muster-datenschutzerklaerung.html
-         
-         Die generierten Texte hier einfügen und die Platzhalter ersetzen.
          ================================================================ -->
     <section id="datenschutz" class="legal-section">
         <div class="container">
@@ -2066,16 +2003,13 @@
             <p><strong>Allgemeine Hinweise:</strong> Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.</p>
 
             <h3>2. Verantwortlicher</h3>
-            <!--
-            ⚖️ RECHT: Gleiche Daten wie im Impressum eintragen
-            -->
             <p>
                 Verantwortlich für die Datenverarbeitung auf dieser Website ist:<br><br>
-                [Vollständiger Vor- und Nachname]<br>
-                [Straße und Hausnummer]<br>
-                [PLZ] [Ort]<br><br>
-                Telefon: [Telefonnummer]<br>
-                E-Mail: [E-Mail-Adresse]
+                Ralf-Siegbert Giesen<br>
+                Hintergasse 9<br>
+                36205 Sontra<br><br>
+                Telefon: 05658 922830<br>
+                E-Mail: 50erJunge@googlemail.com
             </p>
 
             <h3>3. Datenerfassung auf dieser Website</h3>
