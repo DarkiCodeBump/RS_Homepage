@@ -620,26 +620,84 @@
             border-color: var(--accent-gold);
         }
 
-        /*
-        📸 FOTO: Wenn ein echtes Porträtfoto vorhanden ist, ersetze den SVG-Platzhalter
-        im HTML durch ein <img>-Tag und verwende diese Klasse:
-        */
         .about-image-card img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             position: absolute;
             inset: 0;
+            transition: transform 0.6s ease;
         }
 
-        .about-image-card svg {
-            width: 120px;
-            height: 120px;
-            fill: none;
-            stroke: var(--accent-gold);
-            stroke-width: 1.2;
-            margin-bottom: 24px;
-            opacity: 0.8;
+        .about-image-card:hover img {
+            transform: scale(1.04);
+        }
+
+        .about-image-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 35px 20px 20px 20px;
+            background: linear-gradient(to top, rgba(18, 16, 14, 0.95) 0%, rgba(18, 16, 14, 0.6) 60%, transparent 100%);
+            color: #ffffff;
+            text-align: center;
+            z-index: 2;
+        }
+
+        .about-exhibition-feature {
+            width: 100%;
+            margin-top: 50px;
+        }
+
+        .about-exhibition-card {
+            display: grid;
+            grid-template-columns: 1.1fr 1fr;
+            gap: 30px;
+            background: linear-gradient(145deg, rgba(34, 30, 26, 0.8), rgba(20, 18, 16, 0.9));
+            border: 1px solid var(--border-subtle);
+            border-radius: 12px;
+            overflow: hidden;
+            align-items: center;
+            transition: border-color 0.4s ease, transform 0.4s ease;
+        }
+
+        .about-exhibition-card:hover {
+            border-color: var(--accent-gold);
+            transform: translateY(-2px);
+        }
+
+        .about-exhibition-img-wrapper {
+            position: relative;
+            height: 280px;
+            overflow: hidden;
+        }
+
+        .about-exhibition-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .about-exhibition-card:hover .about-exhibition-img-wrapper img {
+            transform: scale(1.03);
+        }
+
+        .about-exhibition-info {
+            padding: 30px 40px 30px 10px;
+        }
+
+        @media (max-width: 992px) {
+            .about-exhibition-card {
+                grid-template-columns: 1fr;
+            }
+            .about-exhibition-img-wrapper {
+                height: 220px;
+            }
+            .about-exhibition-info {
+                padding: 24px;
+            }
         }
 
         .about-content h2 {
@@ -1675,13 +1733,11 @@
         <div class="about-grid">
             <div class="about-image-wrapper reveal">
                 <div class="about-image-card">
-                    <svg viewBox="0 0 100 100" aria-hidden="true">
-                        <path d="M50 10 C30 10 20 30 20 50 C20 70 35 90 50 90 C65 90 80 70 80 50 C80 30 70 10 50 10 Z" />
-                        <path d="M50 25 C40 25 32 38 32 50 C32 62 42 75 50 75 C58 75 68 62 68 50 C68 38 60 25 50 25 Z" />
-                        <circle cx="50" cy="50" r="8" />
-                    </svg>
-                    <h3 style="font-size: 1.8rem; margin-bottom: 8px;">Ralf-Siegbert Giesen</h3>
-                    <p style="color: var(--accent-gold); font-size: 0.9rem;">Holzkünstler &amp; Formgestalter</p>
+                    <img src="bilder/ralf-portrait.jpg" alt="Ralf-Siegbert Giesen – Holzkünstler &amp; Formgestalter" loading="lazy">
+                    <div class="about-image-overlay">
+                        <h3 style="font-size: 1.6rem; margin-bottom: 4px; color: #ffffff;">Ralf-Siegbert Giesen</h3>
+                        <p style="color: var(--accent-gold); font-size: 0.9rem;">Holzkünstler &amp; Formgestalter</p>
+                    </div>
                 </div>
             </div>
             <div class="about-content reveal reveal-delay-1">
@@ -1692,6 +1748,20 @@
                     "Ich versuche nicht, dem Holz meinen Willen aufzuzwingen. Meine Aufgabe ist es, die verborgene Skulptur freizulegen, die die Natur bereits angelegt hat."
                 </div>
                 <p>In meiner Holzwerkstatt entstehen Arbeiten, die zwischen klarer Geometrie und fließender, organischer Dynamik balancieren. Verändert mit Säge, Stechbeitel und dem Einbringen von Kupfermetall, bleibt der Charakter des Holzes fühl- und erlebbar. Das Holz erscheint in einer neuen Ansicht!</p>
+            </div>
+        </div>
+
+        <!-- Ausstellung & Künstlervorstellung -->
+        <div class="about-exhibition-feature reveal" style="margin-top: 45px;">
+            <div class="about-exhibition-card">
+                <div class="about-exhibition-img-wrapper">
+                    <img src="bilder/ralf-ausstellung.webp" alt="Ralf-Siegbert Giesen bei seiner Holz-Kunsthandwerk Ausstellung in Sontra" loading="lazy">
+                </div>
+                <div class="about-exhibition-info">
+                    <div style="color: var(--accent-gold); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 6px;">Künstlervorstellung &amp; Einblicke</div>
+                    <h3 style="font-size: 1.4rem; margin-bottom: 10px; color: #ffffff;">Ausstellung &amp; Präsentation in Sontra</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;">Impressionen von der Präsentation der Unikate – Ralf-Siegbert Giesen im persönlichen Austausch mit Kunstinteressierten und Holzliebhabern.</p>
+                </div>
             </div>
         </div>
     </section>
