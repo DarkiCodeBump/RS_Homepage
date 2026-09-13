@@ -400,11 +400,28 @@
         }
 
         .hero h1 {
-            font-size: 4.2rem;
-            line-height: 1.1;
             margin-bottom: 24px;
-            font-weight: 600;
             animation: fadeInUp 0.8s ease-out 0.2s both;
+        }
+
+        .hero-title-main {
+            display: block;
+            font-size: 4.5rem;
+            line-height: 1.1;
+            margin-bottom: 14px;
+            font-family: var(--font-heading);
+            font-weight: 700;
+            letter-spacing: 0.02em;
+        }
+
+        .hero-title-sub {
+            display: block;
+            font-size: 1.35rem;
+            line-height: 1.4;
+            font-weight: 400;
+            color: var(--accent-light);
+            font-family: var(--font-body);
+            letter-spacing: 0.04em;
         }
 
         /* Gradient-Text auf dem Schlüsselwort */
@@ -1547,8 +1564,12 @@
         }
 
         @media (max-width: 480px) {
-            .hero h1 {
-                font-size: 2rem;
+            .hero-title-main {
+                font-size: 2.6rem;
+            }
+
+            .hero-title-sub {
+                font-size: 1.05rem;
             }
 
             .btn-group {
@@ -1606,8 +1627,10 @@
     <section class="hero" id="main-content">
         <div class="hero-content">
             <span class="hero-tag">Kunst & Natur im Einklang</span>
-            <!-- 📝 TEXT: Hauptüberschrift – das Wort in <span class="highlight-text"> bekommt einen Farbverlauf -->
-            <h1>Holz – Gestalten: <span class="highlight-text">Natur &amp; bunt, grob &amp; fein, skurril &amp; klar, metallisch</span></h1>
+            <h1>
+                <span class="hero-title-main">Holz &ndash; <span class="highlight-text">Gestalten</span></span>
+                <span class="hero-title-sub">Natur &amp; bunt &middot; grob &amp; fein &middot; skurril &amp; klar &middot; metallisch</span>
+            </h1>
             <p>Einzigartige Holzskulpturen und organische Wandobjekte. Geformt aus der Faszination für heimische Hölzer, Wuchsformen und zeitlose Eleganz.</p>
             <div class="btn-group">
                 <a href="#gallery" class="btn btn-primary">Galerie entdecken</a>
